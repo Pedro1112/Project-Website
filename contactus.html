@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Contact Us</title>
+
+<link rel="stylesheet" type="text/css" href="projectcss.css"/>
+
+<script src = "project.js"></script>
+</head>
+
+<body onload="return datedisplaymessage()">
+
+<div class="container">
+
+<p>
+ <h2>Salazar Real Estate Management </h2>
+</p>
+
+<p id="menuoptions">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="index.html">Home</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  |  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		<a href="aboutus.html">About Us</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	<a href="ourrates.html">Our Rates</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  |  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		<a href="viewfloorplans.html">View Floor Plans</a>		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  |  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		<a href="makeapayment.html">Make A Payment</a>		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  |  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		<a href="contactus.html">Contact us</a> </p>
+
+
+
+
+<div id="contentarea">
+<p class="content">
+<h2> Contact Us</h2>
+ <h4>          If you need to contact us for any reason, please feel free to fill out the form below and we will get back to you as soon as possible.  </h4>
+</p>
+<form method= "post" action= "http://www.uta.edu">
+ 
+		<h4>Please fill out this form to contact us:</h4>	
+		<label> Name:
+		<p></p>
+		<input type="text" id="contactname" name="name" size="25" max="26"placeholder="Name" required> </label>
+		<p></p>
+		<label>Comments:
+			<p> </p>
+			<textarea name="Comments" id="contactcomment" rows="3" cols="27" placeholder="Enter comments here" required> </textarea>		
+		</label>
+		<p></p>
+		<label>Email Address:
+			<input type="text" id="contactemail" name="email" size="25" placeholder="name@domain.com" required/>
+		</label>
+		<p></p>
+		<label>Telephone Number:
+			<input type="tel" id="contacttel" name="tel" size="7" placeholder="Telephone #" required/>
+		</label>
+
+		<p></p>
+		<input type="submit" value="Submit" onclick="resetcontactus()"/>
+		<input type="reset" value="Clear" onclick="resetcontactus()"/>
+		
+	</form>	
+
+</div>
+
+
+<div class="footer"> 
+<p>Copyright &#174 2014&nbsp  &nbsp  </p> 
+<p id="datemessage"> </p>
+</div>
+
+
+</div>
+
+
+
+
+</body>
+
+</html>

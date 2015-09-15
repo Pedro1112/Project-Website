@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Make A Payment</title>
+<link rel="stylesheet" type="text/css" href="projectcss.css"/>
+
+<script src = "project.js"></script>
+</head>
+
+<body onload="return datedisplaymessage()">
+
+<div class="container">
+
+<p> <h2>Salazar Real Estate Management </h2>
+</p>
+
+<p id="menuoptions">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="index.html">Home</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  |  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		<a href="aboutus.html">About Us</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  | &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	<a href="ourrates.html">Our Rates</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  |  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		<a href="viewfloorplans.html">View Floor Plans</a>		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  |  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		<a href="makeapayment.html">Make A Payment</a>		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  |  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		<a href="contactus.html">Contact us</a> </p>
+
+
+
+<div id="paymentcontentarea">
+<p class="content">
+</p>
+<h2>Introducing our new feature: Online payments!</h2>
+		<h4>Now you can make a payment from the comfort of your own home. No need to hassle and come to the main office. Simply provide the information necessary in the form below and we will send you a confirmation Email once your payment is processed.   </h4>
+<form method= "post" action="http://www.uta.edu" >
+		
+		
+		<h4>Please fill out this form to make a payment:</h4>	
+		<label> Full Name:
+		<input type="text" id="payname" name="name" size="20" max="30" placeholder="Name" required> </label>
+		<p></p>
+		<label">Unit Number:
+			<textarea name="unitnumber" id="payunit" rows="1" cols="11" Placeholder="Unit Number" required> </textarea>		
+		</label>
+		<p></p>
+		<p>Select form of payment:</p>
+		<p>
+			<input type="radio" name="source" value="credit card">Credit Card &nbsp;&nbsp;&nbsp;
+			<input type="radio" name="source" value="debit card">Debit Card &nbsp;&nbsp;&nbsp;
+		</p>
+		
+		<details>			
+		<summary>Card Information</summary>
+		<p>
+			<label>Name on Card:
+			<input type="text" name="cardname" id="paycardname" size="25" placeholder="Name on Card"/>
+			</label>
+			<p></p>
+			<label>Credit Card Number:
+			<input type="number" id="paycardnumber" name="ccnumber" size="16" placeholder="xxxx-xxxx-xxxx-xxxx"/>
+			</label>
+			<p></p>
+			<label>Expiration Date:
+			<input type="Date" id="payexpdate" name="expdate" size="8" placeholder="Expiration Date"/>
+			</label>
+		</p>
+	</details>
+	<p></p>
+	
+		
+
+		<p></p>
+		<input type="submit" value="Submit" />
+		<input type="reset" value="Clear" onclick="resetpayment()"/>
+		
+	</form>
+</div>
+
+
+<div class="footer"> 
+<p>Copyright &#174 2015&nbsp  &nbsp  </p> 
+<p id="datemessage"> </p>
+</div>
+
+
+</div>
+
+
+
+
+</body>
+
+</html>
